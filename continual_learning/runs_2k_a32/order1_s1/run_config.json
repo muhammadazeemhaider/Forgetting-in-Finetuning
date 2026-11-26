@@ -1,0 +1,130 @@
+{
+ "order": [
+  "dbpedia",
+  "amazon",
+  "yahoo",
+  "agnews"
+ ],
+ "seed": 1,
+ "config": {
+  "model": "meta-llama/Llama-3.2-1B",
+  "dtype": "bfloat16",
+  "benchmark": "Standard CL Benchmark (Zhang et al. 2015 text classification; orders as in Progressive Prompts / O-LoRA)",
+  "tasks": [
+   "dbpedia",
+   "amazon",
+   "yahoo",
+   "agnews"
+  ],
+  "orders": {
+   "order1": [
+    "dbpedia",
+    "amazon",
+    "yahoo",
+    "agnews"
+   ],
+   "order2": [
+    "dbpedia",
+    "amazon",
+    "agnews",
+    "yahoo"
+   ],
+   "order3": [
+    "yahoo",
+    "amazon",
+    "agnews",
+    "dbpedia"
+   ]
+  },
+  "seeds": [
+   0,
+   1,
+   2
+  ],
+  "data": {
+   "data_seed": 42,
+   "train_per_class": 2000,
+   "test_per_class": 500,
+   "anchors_per_task": 128,
+   "text_max_tokens": 160,
+   "max_length": 384,
+   "dir": "data_2k"
+  },
+  "adapter": {
+   "target_modules": [
+    "q_proj",
+    "k_proj",
+    "v_proj",
+    "o_proj",
+    "gate_proj",
+    "up_proj",
+    "down_proj"
+   ],
+   "layers": "all",
+   "total_rank_per_task": 16,
+   "learn_rank": 8,
+   "repair_rank": 8,
+   "alpha_over_r": 1.0,
+   "dropout": 0.0,
+   "init": "A kaiming-uniform (PEFT default), B zero"
+  },
+  "training": {
+   "optimizer": "AdamW",
+   "lr": 0.0001,
+   "weight_decay": 0.0,
+   "betas": [
+    0.9,
+    0.999
+   ],
+   "grad_clip": 1.0,
+   "lr_schedule": "constant",
+   "batch_size": 16,
+   "anchor_batch_size": 16,
+   "epochs_per_task": 1,
+   "protect_fraction": 0.25,
+   "lambda_old": 1.0,
+   "kl_temperature": 1.0,
+   "olora_lambda": 0.5,
+   "alternating_cycles": 5
+  },
+  "methods": [
+   "seq",
+   "replay",
+   "joint",
+   "delayed",
+   "repair",
+   "olora",
+   "full_replay",
+   "mtl"
+  ],
+  "eval_batch_size": 64,
+  "methods_exp1": [
+   "alternating"
+  ],
+  "methods_exp2": [
+   "shared_seq",
+   "shared_replay",
+   "shared_delayed",
+   "shared_repair"
+  ],
+  "ties": {
+   "ties_only": {
+    "density": 0.5,
+    "lambda": 1.0,
+    "selected_on": "dev split, order1 seed0"
+   },
+   "ties_repair": {
+    "density": 0.5,
+    "lambda": 1.5,
+    "selected_on": "dev split, order1 seed0"
+   },
+   "ties_repair_lwf": {
+    "density": 0.8,
+    "lambda": 1.0,
+    "selected_on": "dev split, order1 seed0"
+   }
+  }
+ },
+ "torch": "2.10.0+cu128",
+ "gpu": "NVIDIA A100-PCIE-40GB"
+}

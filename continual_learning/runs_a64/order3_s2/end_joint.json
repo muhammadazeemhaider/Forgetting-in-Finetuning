@@ -1,0 +1,398 @@
+{
+ "method": "end_joint",
+ "order": [
+  "yahoo",
+  "amazon",
+  "agnews",
+  "dbpedia"
+ ],
+ "seed": 2,
+ "acc_matrix": [
+  {
+   "after": "yahoo",
+   "acc": {
+    "yahoo": 0.7404000163078308
+   }
+  },
+  {
+   "after": "amazon",
+   "acc": {
+    "yahoo": 0.6528000235557556,
+    "amazon": 0.626800000667572
+   }
+  },
+  {
+   "after": "agnews",
+   "acc": {
+    "yahoo": 0.6805999875068665,
+    "amazon": 0.5631999969482422,
+    "agnews": 0.9110000133514404
+   }
+  },
+  {
+   "after": "dbpedia",
+   "acc": {
+    "yahoo": 0.7235999703407288,
+    "amazon": 0.6308000087738037,
+    "agnews": 0.9039999842643738,
+    "dbpedia": 0.9908571243286133
+   }
+  }
+ ],
+ "task_stats": [
+  {
+   "steps": 313,
+   "protected_steps": 0,
+   "old_exposures": 0,
+   "learn_steps": 313,
+   "repair_steps": 0,
+   "memory_tasks": [
+    "yahoo"
+   ],
+   "memory_examples": 64
+  },
+  {
+   "steps": 250,
+   "protected_steps": 0,
+   "old_exposures": 0,
+   "learn_steps": 250,
+   "repair_steps": 0,
+   "memory_tasks": [
+    "amazon",
+    "yahoo"
+   ],
+   "memory_examples": 128
+  },
+  {
+   "steps": 875,
+   "protected_steps": 0,
+   "old_exposures": 0,
+   "learn_steps": 875,
+   "repair_steps": 0,
+   "memory_tasks": [
+    "agnews",
+    "amazon",
+    "yahoo"
+   ],
+   "memory_examples": 192
+  }
+ ],
+ "log": [
+  {
+   "task": "amazon",
+   "step": 0,
+   "phase": "learn",
+   "ce": 2.6661062240600586,
+   "kl": null
+  },
+  {
+   "task": "amazon",
+   "step": 50,
+   "phase": "learn",
+   "ce": 0.7397470474243164,
+   "kl": null
+  },
+  {
+   "task": "amazon",
+   "step": 100,
+   "phase": "learn",
+   "ce": 0.5433817505836487,
+   "kl": null
+  },
+  {
+   "task": "amazon",
+   "step": 150,
+   "phase": "learn",
+   "ce": 0.6257186532020569,
+   "kl": null
+  },
+  {
+   "task": "amazon",
+   "step": 200,
+   "phase": "learn",
+   "ce": 1.105041265487671,
+   "kl": null
+  },
+  {
+   "task": "amazon",
+   "step": 250,
+   "phase": "learn",
+   "ce": 0.6802102327346802,
+   "kl": null
+  },
+  {
+   "task": "amazon",
+   "step": 300,
+   "phase": "learn",
+   "ce": 0.5619030594825745,
+   "kl": null
+  },
+  {
+   "task": "amazon",
+   "step": 312,
+   "phase": "learn",
+   "ce": 0.49458372592926025,
+   "kl": null
+  },
+  {
+   "task": "agnews",
+   "step": 0,
+   "phase": "learn",
+   "ce": 0.994176983833313,
+   "kl": null
+  },
+  {
+   "task": "agnews",
+   "step": 50,
+   "phase": "learn",
+   "ce": 0.1238059252500534,
+   "kl": null
+  },
+  {
+   "task": "agnews",
+   "step": 100,
+   "phase": "learn",
+   "ce": 0.2271725833415985,
+   "kl": null
+  },
+  {
+   "task": "agnews",
+   "step": 150,
+   "phase": "learn",
+   "ce": 0.329555869102478,
+   "kl": null
+  },
+  {
+   "task": "agnews",
+   "step": 200,
+   "phase": "learn",
+   "ce": 0.06456596404314041,
+   "kl": null
+  },
+  {
+   "task": "agnews",
+   "step": 249,
+   "phase": "learn",
+   "ce": 0.05667179822921753,
+   "kl": null
+  },
+  {
+   "task": "dbpedia",
+   "step": 0,
+   "phase": "learn",
+   "ce": 1.762958288192749,
+   "kl": null
+  },
+  {
+   "task": "dbpedia",
+   "step": 50,
+   "phase": "learn",
+   "ce": 0.46043381094932556,
+   "kl": null
+  },
+  {
+   "task": "dbpedia",
+   "step": 100,
+   "phase": "learn",
+   "ce": 0.009059804491698742,
+   "kl": null
+  },
+  {
+   "task": "dbpedia",
+   "step": 150,
+   "phase": "learn",
+   "ce": 0.0038621071726083755,
+   "kl": null
+  },
+  {
+   "task": "dbpedia",
+   "step": 200,
+   "phase": "learn",
+   "ce": 0.26103052496910095,
+   "kl": null
+  },
+  {
+   "task": "dbpedia",
+   "step": 250,
+   "phase": "learn",
+   "ce": 0.0023575392551720142,
+   "kl": null
+  },
+  {
+   "task": "dbpedia",
+   "step": 300,
+   "phase": "learn",
+   "ce": 0.08532404899597168,
+   "kl": null
+  },
+  {
+   "task": "dbpedia",
+   "step": 350,
+   "phase": "learn",
+   "ce": 0.004861603491008282,
+   "kl": null
+  },
+  {
+   "task": "dbpedia",
+   "step": 400,
+   "phase": "learn",
+   "ce": 0.005904240533709526,
+   "kl": null
+  },
+  {
+   "task": "dbpedia",
+   "step": 450,
+   "phase": "learn",
+   "ce": 0.0011258735321462154,
+   "kl": null
+  },
+  {
+   "task": "dbpedia",
+   "step": 500,
+   "phase": "learn",
+   "ce": 0.0033915985841304064,
+   "kl": null
+  },
+  {
+   "task": "dbpedia",
+   "step": 550,
+   "phase": "learn",
+   "ce": 0.0009300726233050227,
+   "kl": null
+  },
+  {
+   "task": "dbpedia",
+   "step": 600,
+   "phase": "learn",
+   "ce": 0.0008959351689554751,
+   "kl": null
+  },
+  {
+   "task": "dbpedia",
+   "step": 650,
+   "phase": "learn",
+   "ce": 0.16499194502830505,
+   "kl": null
+  },
+  {
+   "task": "dbpedia",
+   "step": 700,
+   "phase": "learn",
+   "ce": 0.3059372305870056,
+   "kl": null
+  },
+  {
+   "task": "dbpedia",
+   "step": 750,
+   "phase": "learn",
+   "ce": 0.0014936006627976894,
+   "kl": null
+  },
+  {
+   "task": "dbpedia",
+   "step": 800,
+   "phase": "learn",
+   "ce": 0.0005838741781190038,
+   "kl": null
+  },
+  {
+   "task": "dbpedia",
+   "step": 850,
+   "phase": "learn",
+   "ce": 0.009137754328548908,
+   "kl": null
+  },
+  {
+   "task": "dbpedia",
+   "step": 874,
+   "phase": "learn",
+   "ce": 0.0005680322647094727,
+   "kl": null
+  },
+  {
+   "task": "end_all",
+   "step": 0,
+   "phase": "end_repair",
+   "ce": null,
+   "kl": 0.3189413249492645
+  },
+  {
+   "task": "end_all",
+   "step": 50,
+   "phase": "end_repair",
+   "ce": null,
+   "kl": 0.011492054909467697
+  },
+  {
+   "task": "end_all",
+   "step": 100,
+   "phase": "end_repair",
+   "ce": null,
+   "kl": 0.005501485895365477
+  },
+  {
+   "task": "end_all",
+   "step": 150,
+   "phase": "end_repair",
+   "ce": null,
+   "kl": 0.0013988666469231248
+  },
+  {
+   "task": "end_all",
+   "step": 200,
+   "phase": "end_repair",
+   "ce": null,
+   "kl": 0.0004369909001979977
+  },
+  {
+   "task": "end_all",
+   "step": 250,
+   "phase": "end_repair",
+   "ce": null,
+   "kl": 0.0005790510913357139
+  },
+  {
+   "task": "end_all",
+   "step": 300,
+   "phase": "end_repair",
+   "ce": null,
+   "kl": 0.0006460752920247614
+  },
+  {
+   "task": "end_all",
+   "step": 350,
+   "phase": "end_repair",
+   "ce": null,
+   "kl": 0.0007791454554535449
+  },
+  {
+   "task": "end_all",
+   "step": 358,
+   "phase": "end_repair",
+   "ce": null,
+   "kl": 0.0014924677088856697
+  }
+ ],
+ "seconds": 953.8,
+ "pre_repair": {
+  "after": "dbpedia",
+  "acc": {
+   "yahoo": 0.6571999788284302,
+   "amazon": 0.5436000227928162,
+   "agnews": 0.8669999837875366,
+   "dbpedia": 0.9900000095367432
+  }
+ },
+ "end_repair": {
+  "repair_steps": 359,
+  "old_exposures": 5744,
+  "rank_each": 24,
+  "branches": [
+   "end_all"
+  ],
+  "steps_each": [
+   359
+  ]
+ },
+ "note": "recovered: two concurrent end_joint runs (66003026, 66003029) wrote this file; kept 66003029's record, which matches the preds/adapters written at 21:54"
+}

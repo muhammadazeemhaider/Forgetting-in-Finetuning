@@ -1,0 +1,440 @@
+{
+ "method": "delayed",
+ "order": [
+  "dbpedia",
+  "amazon",
+  "agnews",
+  "yahoo"
+ ],
+ "seed": 2,
+ "acc_matrix": [
+  {
+   "after": "dbpedia",
+   "acc": {
+    "dbpedia": 0.9922857284545898
+   }
+  },
+  {
+   "after": "amazon",
+   "acc": {
+    "dbpedia": 0.9922857284545898,
+    "amazon": 0.6395999789237976
+   }
+  },
+  {
+   "after": "agnews",
+   "acc": {
+    "dbpedia": 0.9928571581840515,
+    "amazon": 0.6384000182151794,
+    "agnews": 0.9014999866485596
+   }
+  },
+  {
+   "after": "yahoo",
+   "acc": {
+    "dbpedia": 0.991428554058075,
+    "amazon": 0.6395999789237976,
+    "agnews": 0.9024999737739563,
+    "yahoo": 0.7608000040054321
+   }
+  }
+ ],
+ "task_stats": [
+  {
+   "steps": 625,
+   "protected_steps": 156,
+   "old_exposures": 2496,
+   "learn_steps": 625,
+   "repair_steps": 0,
+   "memory_tasks": [
+    "dbpedia"
+   ],
+   "memory_examples": 64
+  },
+  {
+   "steps": 500,
+   "protected_steps": 125,
+   "old_exposures": 2000,
+   "learn_steps": 500,
+   "repair_steps": 0,
+   "memory_tasks": [
+    "amazon",
+    "dbpedia"
+   ],
+   "memory_examples": 128
+  },
+  {
+   "steps": 1250,
+   "protected_steps": 312,
+   "old_exposures": 4992,
+   "learn_steps": 1250,
+   "repair_steps": 0,
+   "memory_tasks": [
+    "agnews",
+    "amazon",
+    "dbpedia"
+   ],
+   "memory_examples": 192
+  }
+ ],
+ "log": [
+  {
+   "task": "amazon",
+   "step": 0,
+   "phase": "learn",
+   "ce": 2.3422694206237793,
+   "kl": null
+  },
+  {
+   "task": "amazon",
+   "step": 50,
+   "phase": "learn",
+   "ce": 1.10209321975708,
+   "kl": null
+  },
+  {
+   "task": "amazon",
+   "step": 100,
+   "phase": "learn",
+   "ce": 0.8686925768852234,
+   "kl": null
+  },
+  {
+   "task": "amazon",
+   "step": 150,
+   "phase": "learn",
+   "ce": 1.0554871559143066,
+   "kl": null
+  },
+  {
+   "task": "amazon",
+   "step": 200,
+   "phase": "learn",
+   "ce": 0.8481853604316711,
+   "kl": null
+  },
+  {
+   "task": "amazon",
+   "step": 250,
+   "phase": "learn",
+   "ce": 0.9926785826683044,
+   "kl": null
+  },
+  {
+   "task": "amazon",
+   "step": 300,
+   "phase": "learn",
+   "ce": 0.9263246655464172,
+   "kl": null
+  },
+  {
+   "task": "amazon",
+   "step": 350,
+   "phase": "learn",
+   "ce": 0.5978953838348389,
+   "kl": null
+  },
+  {
+   "task": "amazon",
+   "step": 400,
+   "phase": "learn",
+   "ce": 0.8670886754989624,
+   "kl": null
+  },
+  {
+   "task": "amazon",
+   "step": 450,
+   "phase": "learn",
+   "ce": 0.5625855326652527,
+   "kl": null
+  },
+  {
+   "task": "amazon",
+   "step": 500,
+   "phase": "learn",
+   "ce": 1.0892915725708008,
+   "kl": 0.00488133542239666
+  },
+  {
+   "task": "amazon",
+   "step": 550,
+   "phase": "learn",
+   "ce": 0.8596083521842957,
+   "kl": 0.00035258266143500805
+  },
+  {
+   "task": "amazon",
+   "step": 600,
+   "phase": "learn",
+   "ce": 0.6242510080337524,
+   "kl": 0.0003907662467099726
+  },
+  {
+   "task": "amazon",
+   "step": 624,
+   "phase": "learn",
+   "ce": 0.7065966725349426,
+   "kl": 0.001073350664228201
+  },
+  {
+   "task": "agnews",
+   "step": 0,
+   "phase": "learn",
+   "ce": 2.812434673309326,
+   "kl": null
+  },
+  {
+   "task": "agnews",
+   "step": 50,
+   "phase": "learn",
+   "ce": 0.6747514009475708,
+   "kl": null
+  },
+  {
+   "task": "agnews",
+   "step": 100,
+   "phase": "learn",
+   "ce": 0.15090352296829224,
+   "kl": null
+  },
+  {
+   "task": "agnews",
+   "step": 150,
+   "phase": "learn",
+   "ce": 0.015623149462044239,
+   "kl": null
+  },
+  {
+   "task": "agnews",
+   "step": 200,
+   "phase": "learn",
+   "ce": 0.11870243400335312,
+   "kl": null
+  },
+  {
+   "task": "agnews",
+   "step": 250,
+   "phase": "learn",
+   "ce": 0.08693388104438782,
+   "kl": null
+  },
+  {
+   "task": "agnews",
+   "step": 300,
+   "phase": "learn",
+   "ce": 0.7678796648979187,
+   "kl": null
+  },
+  {
+   "task": "agnews",
+   "step": 350,
+   "phase": "learn",
+   "ce": 0.022560644894838333,
+   "kl": null
+  },
+  {
+   "task": "agnews",
+   "step": 400,
+   "phase": "learn",
+   "ce": 0.5846655368804932,
+   "kl": 0.014465988613665104
+  },
+  {
+   "task": "agnews",
+   "step": 450,
+   "phase": "learn",
+   "ce": 0.647903323173523,
+   "kl": 0.0018558489391580224
+  },
+  {
+   "task": "agnews",
+   "step": 499,
+   "phase": "learn",
+   "ce": 0.23373423516750336,
+   "kl": 0.0013193103950470686
+  },
+  {
+   "task": "yahoo",
+   "step": 0,
+   "phase": "learn",
+   "ce": 2.0450024604797363,
+   "kl": null
+  },
+  {
+   "task": "yahoo",
+   "step": 50,
+   "phase": "learn",
+   "ce": 1.214892029762268,
+   "kl": null
+  },
+  {
+   "task": "yahoo",
+   "step": 100,
+   "phase": "learn",
+   "ce": 0.8040430545806885,
+   "kl": null
+  },
+  {
+   "task": "yahoo",
+   "step": 150,
+   "phase": "learn",
+   "ce": 0.4010653793811798,
+   "kl": null
+  },
+  {
+   "task": "yahoo",
+   "step": 200,
+   "phase": "learn",
+   "ce": 1.494931697845459,
+   "kl": null
+  },
+  {
+   "task": "yahoo",
+   "step": 250,
+   "phase": "learn",
+   "ce": 1.5508428812026978,
+   "kl": null
+  },
+  {
+   "task": "yahoo",
+   "step": 300,
+   "phase": "learn",
+   "ce": 0.9661850929260254,
+   "kl": null
+  },
+  {
+   "task": "yahoo",
+   "step": 350,
+   "phase": "learn",
+   "ce": 0.3553699851036072,
+   "kl": null
+  },
+  {
+   "task": "yahoo",
+   "step": 400,
+   "phase": "learn",
+   "ce": 1.301684856414795,
+   "kl": null
+  },
+  {
+   "task": "yahoo",
+   "step": 450,
+   "phase": "learn",
+   "ce": 0.8511228561401367,
+   "kl": null
+  },
+  {
+   "task": "yahoo",
+   "step": 500,
+   "phase": "learn",
+   "ce": 0.5635547637939453,
+   "kl": null
+  },
+  {
+   "task": "yahoo",
+   "step": 550,
+   "phase": "learn",
+   "ce": 0.3458307683467865,
+   "kl": null
+  },
+  {
+   "task": "yahoo",
+   "step": 600,
+   "phase": "learn",
+   "ce": 0.752771258354187,
+   "kl": null
+  },
+  {
+   "task": "yahoo",
+   "step": 650,
+   "phase": "learn",
+   "ce": 0.49924322962760925,
+   "kl": null
+  },
+  {
+   "task": "yahoo",
+   "step": 700,
+   "phase": "learn",
+   "ce": 0.9281202554702759,
+   "kl": null
+  },
+  {
+   "task": "yahoo",
+   "step": 750,
+   "phase": "learn",
+   "ce": 0.42572399973869324,
+   "kl": null
+  },
+  {
+   "task": "yahoo",
+   "step": 800,
+   "phase": "learn",
+   "ce": 1.2413299083709717,
+   "kl": null
+  },
+  {
+   "task": "yahoo",
+   "step": 850,
+   "phase": "learn",
+   "ce": 1.4133374691009521,
+   "kl": null
+  },
+  {
+   "task": "yahoo",
+   "step": 900,
+   "phase": "learn",
+   "ce": 0.472154438495636,
+   "kl": null
+  },
+  {
+   "task": "yahoo",
+   "step": 950,
+   "phase": "learn",
+   "ce": 0.5518090128898621,
+   "kl": 0.13710349798202515
+  },
+  {
+   "task": "yahoo",
+   "step": 1000,
+   "phase": "learn",
+   "ce": 0.4446258842945099,
+   "kl": 0.007147498894482851
+  },
+  {
+   "task": "yahoo",
+   "step": 1050,
+   "phase": "learn",
+   "ce": 0.6009402871131897,
+   "kl": 0.006623850669711828
+  },
+  {
+   "task": "yahoo",
+   "step": 1100,
+   "phase": "learn",
+   "ce": 0.31597647070884705,
+   "kl": 0.009965913370251656
+  },
+  {
+   "task": "yahoo",
+   "step": 1150,
+   "phase": "learn",
+   "ce": 0.9097334146499634,
+   "kl": 0.004006047733128071
+  },
+  {
+   "task": "yahoo",
+   "step": 1200,
+   "phase": "learn",
+   "ce": 0.8145227432250977,
+   "kl": 0.015067188069224358
+  },
+  {
+   "task": "yahoo",
+   "step": 1249,
+   "phase": "learn",
+   "ce": 0.4864770174026489,
+   "kl": 0.001991677563637495
+  }
+ ],
+ "seconds": 1050.2
+}

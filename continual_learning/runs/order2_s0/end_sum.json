@@ -1,0 +1,415 @@
+{
+ "method": "end_sum",
+ "order": [
+  "dbpedia",
+  "amazon",
+  "agnews",
+  "yahoo"
+ ],
+ "seed": 0,
+ "acc_matrix": [
+  {
+   "after": "dbpedia",
+   "acc": {
+    "dbpedia": 0.9891428351402283
+   }
+  },
+  {
+   "after": "amazon",
+   "acc": {
+    "dbpedia": 0.9888571500778198,
+    "amazon": 0.6111999750137329
+   }
+  },
+  {
+   "after": "agnews",
+   "acc": {
+    "dbpedia": 0.9847142696380615,
+    "amazon": 0.5852000117301941,
+    "agnews": 0.9104999899864197
+   }
+  },
+  {
+   "after": "yahoo",
+   "acc": {
+    "dbpedia": 0.9888571500778198,
+    "amazon": 0.6083999872207642,
+    "agnews": 0.8644999861717224,
+    "yahoo": 0.6001999974250793
+   }
+  }
+ ],
+ "task_stats": [
+  {
+   "steps": 313,
+   "protected_steps": 0,
+   "old_exposures": 0,
+   "learn_steps": 313,
+   "repair_steps": 0,
+   "memory_tasks": [
+    "dbpedia"
+   ],
+   "memory_examples": 128
+  },
+  {
+   "steps": 250,
+   "protected_steps": 0,
+   "old_exposures": 0,
+   "learn_steps": 250,
+   "repair_steps": 0,
+   "memory_tasks": [
+    "amazon",
+    "dbpedia"
+   ],
+   "memory_examples": 256
+  },
+  {
+   "steps": 625,
+   "protected_steps": 0,
+   "old_exposures": 0,
+   "learn_steps": 625,
+   "repair_steps": 0,
+   "memory_tasks": [
+    "agnews",
+    "amazon",
+    "dbpedia"
+   ],
+   "memory_examples": 384
+  }
+ ],
+ "log": [
+  {
+   "task": "amazon",
+   "step": 0,
+   "phase": "learn",
+   "ce": 1.9698054790496826,
+   "kl": null
+  },
+  {
+   "task": "amazon",
+   "step": 50,
+   "phase": "learn",
+   "ce": 0.9263010025024414,
+   "kl": null
+  },
+  {
+   "task": "amazon",
+   "step": 100,
+   "phase": "learn",
+   "ce": 0.75086510181427,
+   "kl": null
+  },
+  {
+   "task": "amazon",
+   "step": 150,
+   "phase": "learn",
+   "ce": 0.7983232140541077,
+   "kl": null
+  },
+  {
+   "task": "amazon",
+   "step": 200,
+   "phase": "learn",
+   "ce": 1.1726009845733643,
+   "kl": null
+  },
+  {
+   "task": "amazon",
+   "step": 250,
+   "phase": "learn",
+   "ce": 0.8591299057006836,
+   "kl": null
+  },
+  {
+   "task": "amazon",
+   "step": 300,
+   "phase": "learn",
+   "ce": 1.5661883354187012,
+   "kl": null
+  },
+  {
+   "task": "amazon",
+   "step": 312,
+   "phase": "learn",
+   "ce": 0.8117765188217163,
+   "kl": null
+  },
+  {
+   "task": "agnews",
+   "step": 0,
+   "phase": "learn",
+   "ce": 1.4389727115631104,
+   "kl": null
+  },
+  {
+   "task": "agnews",
+   "step": 50,
+   "phase": "learn",
+   "ce": 0.13020244240760803,
+   "kl": null
+  },
+  {
+   "task": "agnews",
+   "step": 100,
+   "phase": "learn",
+   "ce": 0.11315809190273285,
+   "kl": null
+  },
+  {
+   "task": "agnews",
+   "step": 150,
+   "phase": "learn",
+   "ce": 0.1323864907026291,
+   "kl": null
+  },
+  {
+   "task": "agnews",
+   "step": 200,
+   "phase": "learn",
+   "ce": 0.09969805181026459,
+   "kl": null
+  },
+  {
+   "task": "agnews",
+   "step": 249,
+   "phase": "learn",
+   "ce": 0.1962183266878128,
+   "kl": null
+  },
+  {
+   "task": "yahoo",
+   "step": 0,
+   "phase": "learn",
+   "ce": 1.926659345626831,
+   "kl": null
+  },
+  {
+   "task": "yahoo",
+   "step": 50,
+   "phase": "learn",
+   "ce": 0.6877191066741943,
+   "kl": null
+  },
+  {
+   "task": "yahoo",
+   "step": 100,
+   "phase": "learn",
+   "ce": 0.9885230660438538,
+   "kl": null
+  },
+  {
+   "task": "yahoo",
+   "step": 150,
+   "phase": "learn",
+   "ce": 0.4941484332084656,
+   "kl": null
+  },
+  {
+   "task": "yahoo",
+   "step": 200,
+   "phase": "learn",
+   "ce": 1.0260465145111084,
+   "kl": null
+  },
+  {
+   "task": "yahoo",
+   "step": 250,
+   "phase": "learn",
+   "ce": 0.7713285088539124,
+   "kl": null
+  },
+  {
+   "task": "yahoo",
+   "step": 300,
+   "phase": "learn",
+   "ce": 0.13849973678588867,
+   "kl": null
+  },
+  {
+   "task": "yahoo",
+   "step": 350,
+   "phase": "learn",
+   "ce": 1.238168716430664,
+   "kl": null
+  },
+  {
+   "task": "yahoo",
+   "step": 400,
+   "phase": "learn",
+   "ce": 1.2077974081039429,
+   "kl": null
+  },
+  {
+   "task": "yahoo",
+   "step": 450,
+   "phase": "learn",
+   "ce": 0.6420491337776184,
+   "kl": null
+  },
+  {
+   "task": "yahoo",
+   "step": 500,
+   "phase": "learn",
+   "ce": 0.7528325319290161,
+   "kl": null
+  },
+  {
+   "task": "yahoo",
+   "step": 550,
+   "phase": "learn",
+   "ce": 0.5990381836891174,
+   "kl": null
+  },
+  {
+   "task": "yahoo",
+   "step": 600,
+   "phase": "learn",
+   "ce": 0.45188283920288086,
+   "kl": null
+  },
+  {
+   "task": "yahoo",
+   "step": 624,
+   "phase": "learn",
+   "ce": 1.0185490846633911,
+   "kl": null
+  },
+  {
+   "task": "end_dbpedia",
+   "step": 0,
+   "phase": "end_repair",
+   "ce": null,
+   "kl": 0.3612496852874756
+  },
+  {
+   "task": "end_dbpedia",
+   "step": 50,
+   "phase": "end_repair",
+   "ce": null,
+   "kl": 0.0005752225988544524
+  },
+  {
+   "task": "end_dbpedia",
+   "step": 73,
+   "phase": "end_repair",
+   "ce": null,
+   "kl": 0.0009214635938405991
+  },
+  {
+   "task": "end_amazon",
+   "step": 0,
+   "phase": "end_repair",
+   "ce": null,
+   "kl": 0.08364187926054001
+  },
+  {
+   "task": "end_amazon",
+   "step": 50,
+   "phase": "end_repair",
+   "ce": null,
+   "kl": 0.005803271196782589
+  },
+  {
+   "task": "end_amazon",
+   "step": 73,
+   "phase": "end_repair",
+   "ce": null,
+   "kl": 0.0026425502728670835
+  },
+  {
+   "task": "end_agnews",
+   "step": 0,
+   "phase": "end_repair",
+   "ce": null,
+   "kl": 0.2191559374332428
+  },
+  {
+   "task": "end_agnews",
+   "step": 50,
+   "phase": "end_repair",
+   "ce": null,
+   "kl": 0.003700087545439601
+  },
+  {
+   "task": "end_agnews",
+   "step": 73,
+   "phase": "end_repair",
+   "ce": null,
+   "kl": 0.00269197765737772
+  },
+  {
+   "task": "end_yahoo",
+   "step": 0,
+   "phase": "end_repair",
+   "ce": null,
+   "kl": 7.958566129673272e-05
+  },
+  {
+   "task": "end_yahoo",
+   "step": 50,
+   "phase": "end_repair",
+   "ce": null,
+   "kl": 0.0016215159557759762
+  },
+  {
+   "task": "end_yahoo",
+   "step": 73,
+   "phase": "end_repair",
+   "ce": null,
+   "kl": 3.8341582694556564e-05
+  }
+ ],
+ "seconds": 1811.3,
+ "pre_repair": {
+  "after": "yahoo",
+  "acc": {
+   "dbpedia": 0.8751428723335266,
+   "amazon": 0.5884000062942505,
+   "agnews": 0.8740000128746033,
+   "yahoo": 0.7523999810218811
+  }
+ },
+ "end_repair": {
+  "repair_steps": 296,
+  "old_exposures": 4736,
+  "rank_each": 6,
+  "branches": [
+   "end_dbpedia",
+   "end_amazon",
+   "end_agnews",
+   "end_yahoo"
+  ],
+  "steps_each": [
+   74,
+   74,
+   74,
+   74
+  ]
+ },
+ "single_repair_acc": {
+  "end_dbpedia": {
+   "dbpedia": 0.9890000224113464,
+   "amazon": 0.6051999926567078,
+   "agnews": 0.8765000104904175,
+   "yahoo": 0.6453999876976013
+  },
+  "end_amazon": {
+   "dbpedia": 0.8915714025497437,
+   "amazon": 0.614799976348877,
+   "agnews": 0.8895000219345093,
+   "yahoo": 0.7523999810218811
+  },
+  "end_agnews": {
+   "dbpedia": 0.9492856860160828,
+   "amazon": 0.6075999736785889,
+   "agnews": 0.9039999842643738,
+   "yahoo": 0.743399977684021
+  },
+  "end_yahoo": {
+   "dbpedia": 0.8748571276664734,
+   "amazon": 0.5875999927520752,
+   "agnews": 0.8744999766349792,
+   "yahoo": 0.7523999810218811
+  }
+ }
+}

@@ -1,0 +1,4 @@
+method,epoch_1,epoch_2,epoch_4
+LoRA r16,151,346,482
+LoRA r64,222,550,707
+Full FT,0,0,0

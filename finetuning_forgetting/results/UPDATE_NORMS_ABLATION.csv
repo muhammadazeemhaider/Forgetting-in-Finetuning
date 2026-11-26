@@ -1,0 +1,2 @@
+regime,model,method,epoch,n_mat,rel_fro,mean_rel,srank,rel_sig1,mean_rel_attn,mean_rel_mlp
+optim_ablation,Llama-2-7B,Full FT,1,224,0.0193091,0.0196161,39.7669,0.0463671,0.0195641,0.0196855

@@ -1,0 +1,22 @@
+{
+ "method": "mtl",
+ "order": [
+  "yahoo",
+  "amazon",
+  "agnews",
+  "dbpedia"
+ ],
+ "seed": 1,
+ "acc_matrix": [
+  {
+   "after": "all",
+   "acc": {
+    "yahoo": 0.7404000163078308,
+    "amazon": 0.5667999982833862,
+    "agnews": 0.9035000205039978,
+    "dbpedia": 0.9901428818702698
+   }
+  }
+ ],
+ "seconds": 815.3
+}

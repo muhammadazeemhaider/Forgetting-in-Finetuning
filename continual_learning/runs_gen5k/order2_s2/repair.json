@@ -1,0 +1,611 @@
+{
+ "method": "repair",
+ "order": [
+  "wmt14",
+  "hellaswag",
+  "triviaqa",
+  "gsm8k"
+ ],
+ "seed": 2,
+ "acc_matrix": [
+  {
+   "after": "wmt14",
+   "acc": {
+    "wmt14": 0.47124870544205794
+   }
+  },
+  {
+   "after": "hellaswag",
+   "acc": {
+    "wmt14": 0.46903230588603284,
+    "hellaswag": 0.682
+   }
+  },
+  {
+   "after": "triviaqa",
+   "acc": {
+    "wmt14": 0.469313725852425,
+    "hellaswag": 0.684,
+    "triviaqa": 0.424
+   }
+  },
+  {
+   "after": "gsm8k",
+   "acc": {
+    "wmt14": 0.46997857815781685,
+    "hellaswag": 0.674,
+    "triviaqa": 0.422,
+    "gsm8k": 0.179
+   }
+  }
+ ],
+ "task_stats": [
+  {
+   "steps": 625,
+   "learn_steps": 469,
+   "repair_steps": 156,
+   "protected_steps": 156
+  },
+  {
+   "steps": 625,
+   "learn_steps": 469,
+   "repair_steps": 156,
+   "protected_steps": 156
+  },
+  {
+   "steps": 625,
+   "learn_steps": 469,
+   "repair_steps": 156,
+   "protected_steps": 156
+  }
+ ],
+ "log": [
+  {
+   "task": "hellaswag",
+   "step": 0,
+   "phase": "learn",
+   "ce": 2.3924286365509033,
+   "kl": null
+  },
+  {
+   "task": "hellaswag",
+   "step": 25,
+   "phase": "learn",
+   "ce": 2.1705644130706787,
+   "kl": null
+  },
+  {
+   "task": "hellaswag",
+   "step": 50,
+   "phase": "learn",
+   "ce": 2.2950382232666016,
+   "kl": null
+  },
+  {
+   "task": "hellaswag",
+   "step": 75,
+   "phase": "learn",
+   "ce": 2.2553799152374268,
+   "kl": null
+  },
+  {
+   "task": "hellaswag",
+   "step": 100,
+   "phase": "learn",
+   "ce": 2.0318944454193115,
+   "kl": null
+  },
+  {
+   "task": "hellaswag",
+   "step": 125,
+   "phase": "learn",
+   "ce": 2.062864303588867,
+   "kl": null
+  },
+  {
+   "task": "hellaswag",
+   "step": 150,
+   "phase": "learn",
+   "ce": 2.2522339820861816,
+   "kl": null
+  },
+  {
+   "task": "hellaswag",
+   "step": 175,
+   "phase": "learn",
+   "ce": 2.1353063583374023,
+   "kl": null
+  },
+  {
+   "task": "hellaswag",
+   "step": 200,
+   "phase": "learn",
+   "ce": 2.0195605754852295,
+   "kl": null
+  },
+  {
+   "task": "hellaswag",
+   "step": 225,
+   "phase": "learn",
+   "ce": 2.1604678630828857,
+   "kl": null
+  },
+  {
+   "task": "hellaswag",
+   "step": 250,
+   "phase": "learn",
+   "ce": 2.0057170391082764,
+   "kl": null
+  },
+  {
+   "task": "hellaswag",
+   "step": 275,
+   "phase": "learn",
+   "ce": 2.043138265609741,
+   "kl": null
+  },
+  {
+   "task": "hellaswag",
+   "step": 300,
+   "phase": "learn",
+   "ce": 2.126100778579712,
+   "kl": null
+  },
+  {
+   "task": "hellaswag",
+   "step": 325,
+   "phase": "learn",
+   "ce": 2.0232529640197754,
+   "kl": null
+  },
+  {
+   "task": "hellaswag",
+   "step": 350,
+   "phase": "learn",
+   "ce": 1.929455041885376,
+   "kl": null
+  },
+  {
+   "task": "hellaswag",
+   "step": 375,
+   "phase": "learn",
+   "ce": 1.9493508338928223,
+   "kl": null
+  },
+  {
+   "task": "hellaswag",
+   "step": 400,
+   "phase": "learn",
+   "ce": 1.9574658870697021,
+   "kl": null
+  },
+  {
+   "task": "hellaswag",
+   "step": 425,
+   "phase": "learn",
+   "ce": 1.9058952331542969,
+   "kl": null
+  },
+  {
+   "task": "hellaswag",
+   "step": 450,
+   "phase": "learn",
+   "ce": 1.79958975315094,
+   "kl": null
+  },
+  {
+   "task": "hellaswag",
+   "step": 475,
+   "phase": "repair",
+   "ce": 2.0624942779541016,
+   "kl": 0.04349716380238533
+  },
+  {
+   "task": "hellaswag",
+   "step": 500,
+   "phase": "repair",
+   "ce": 2.3138492107391357,
+   "kl": 0.017617719247937202
+  },
+  {
+   "task": "hellaswag",
+   "step": 525,
+   "phase": "repair",
+   "ce": 2.0179555416107178,
+   "kl": 0.010516962967813015
+  },
+  {
+   "task": "hellaswag",
+   "step": 550,
+   "phase": "repair",
+   "ce": 2.0555384159088135,
+   "kl": 0.006995007861405611
+  },
+  {
+   "task": "hellaswag",
+   "step": 575,
+   "phase": "repair",
+   "ce": 1.9511303901672363,
+   "kl": 0.007036533206701279
+  },
+  {
+   "task": "hellaswag",
+   "step": 600,
+   "phase": "repair",
+   "ce": 2.268080234527588,
+   "kl": 0.005072825588285923
+  },
+  {
+   "task": "hellaswag",
+   "step": 624,
+   "phase": "repair",
+   "ce": 1.9856910705566406,
+   "kl": 0.004088334273546934
+  },
+  {
+   "task": "triviaqa",
+   "step": 0,
+   "phase": "learn",
+   "ce": 2.996769666671753,
+   "kl": null
+  },
+  {
+   "task": "triviaqa",
+   "step": 25,
+   "phase": "learn",
+   "ce": 0.955300509929657,
+   "kl": null
+  },
+  {
+   "task": "triviaqa",
+   "step": 50,
+   "phase": "learn",
+   "ce": 1.156834602355957,
+   "kl": null
+  },
+  {
+   "task": "triviaqa",
+   "step": 75,
+   "phase": "learn",
+   "ce": 1.308979868888855,
+   "kl": null
+  },
+  {
+   "task": "triviaqa",
+   "step": 100,
+   "phase": "learn",
+   "ce": 1.1004480123519897,
+   "kl": null
+  },
+  {
+   "task": "triviaqa",
+   "step": 125,
+   "phase": "learn",
+   "ce": 0.9584652185440063,
+   "kl": null
+  },
+  {
+   "task": "triviaqa",
+   "step": 150,
+   "phase": "learn",
+   "ce": 1.1570754051208496,
+   "kl": null
+  },
+  {
+   "task": "triviaqa",
+   "step": 175,
+   "phase": "learn",
+   "ce": 2.191507339477539,
+   "kl": null
+  },
+  {
+   "task": "triviaqa",
+   "step": 200,
+   "phase": "learn",
+   "ce": 0.9365551471710205,
+   "kl": null
+  },
+  {
+   "task": "triviaqa",
+   "step": 225,
+   "phase": "learn",
+   "ce": 1.2374529838562012,
+   "kl": null
+  },
+  {
+   "task": "triviaqa",
+   "step": 250,
+   "phase": "learn",
+   "ce": 1.4142251014709473,
+   "kl": null
+  },
+  {
+   "task": "triviaqa",
+   "step": 275,
+   "phase": "learn",
+   "ce": 1.5576777458190918,
+   "kl": null
+  },
+  {
+   "task": "triviaqa",
+   "step": 300,
+   "phase": "learn",
+   "ce": 1.690988540649414,
+   "kl": null
+  },
+  {
+   "task": "triviaqa",
+   "step": 325,
+   "phase": "learn",
+   "ce": 1.3262115716934204,
+   "kl": null
+  },
+  {
+   "task": "triviaqa",
+   "step": 350,
+   "phase": "learn",
+   "ce": 0.765012800693512,
+   "kl": null
+  },
+  {
+   "task": "triviaqa",
+   "step": 375,
+   "phase": "learn",
+   "ce": 0.8854697346687317,
+   "kl": null
+  },
+  {
+   "task": "triviaqa",
+   "step": 400,
+   "phase": "learn",
+   "ce": 1.3783752918243408,
+   "kl": null
+  },
+  {
+   "task": "triviaqa",
+   "step": 425,
+   "phase": "learn",
+   "ce": 0.6312485337257385,
+   "kl": null
+  },
+  {
+   "task": "triviaqa",
+   "step": 450,
+   "phase": "learn",
+   "ce": 0.7861229777336121,
+   "kl": null
+  },
+  {
+   "task": "triviaqa",
+   "step": 475,
+   "phase": "repair",
+   "ce": 0.6680890917778015,
+   "kl": 0.03138122335076332
+  },
+  {
+   "task": "triviaqa",
+   "step": 500,
+   "phase": "repair",
+   "ce": 1.0250046253204346,
+   "kl": 0.0262486319988966
+  },
+  {
+   "task": "triviaqa",
+   "step": 525,
+   "phase": "repair",
+   "ce": 0.9716176986694336,
+   "kl": 0.02474236860871315
+  },
+  {
+   "task": "triviaqa",
+   "step": 550,
+   "phase": "repair",
+   "ce": 1.1217511892318726,
+   "kl": 0.01694677583873272
+  },
+  {
+   "task": "triviaqa",
+   "step": 575,
+   "phase": "repair",
+   "ce": 0.8573788404464722,
+   "kl": 0.013727642595767975
+  },
+  {
+   "task": "triviaqa",
+   "step": 600,
+   "phase": "repair",
+   "ce": 0.887593150138855,
+   "kl": 0.011051875539124012
+  },
+  {
+   "task": "triviaqa",
+   "step": 624,
+   "phase": "repair",
+   "ce": 1.252179741859436,
+   "kl": 0.015240035019814968
+  },
+  {
+   "task": "gsm8k",
+   "step": 0,
+   "phase": "learn",
+   "ce": 1.9942513704299927,
+   "kl": null
+  },
+  {
+   "task": "gsm8k",
+   "step": 25,
+   "phase": "learn",
+   "ce": 1.0095949172973633,
+   "kl": null
+  },
+  {
+   "task": "gsm8k",
+   "step": 50,
+   "phase": "learn",
+   "ce": 0.7803178429603577,
+   "kl": null
+  },
+  {
+   "task": "gsm8k",
+   "step": 75,
+   "phase": "learn",
+   "ce": 0.6919618844985962,
+   "kl": null
+  },
+  {
+   "task": "gsm8k",
+   "step": 100,
+   "phase": "learn",
+   "ce": 0.6047315001487732,
+   "kl": null
+  },
+  {
+   "task": "gsm8k",
+   "step": 125,
+   "phase": "learn",
+   "ce": 0.5727118849754333,
+   "kl": null
+  },
+  {
+   "task": "gsm8k",
+   "step": 150,
+   "phase": "learn",
+   "ce": 0.6667913198471069,
+   "kl": null
+  },
+  {
+   "task": "gsm8k",
+   "step": 175,
+   "phase": "learn",
+   "ce": 0.6083468198776245,
+   "kl": null
+  },
+  {
+   "task": "gsm8k",
+   "step": 200,
+   "phase": "learn",
+   "ce": 0.6843435764312744,
+   "kl": null
+  },
+  {
+   "task": "gsm8k",
+   "step": 225,
+   "phase": "learn",
+   "ce": 0.6023572683334351,
+   "kl": null
+  },
+  {
+   "task": "gsm8k",
+   "step": 250,
+   "phase": "learn",
+   "ce": 0.7150465250015259,
+   "kl": null
+  },
+  {
+   "task": "gsm8k",
+   "step": 275,
+   "phase": "learn",
+   "ce": 0.5238358378410339,
+   "kl": null
+  },
+  {
+   "task": "gsm8k",
+   "step": 300,
+   "phase": "learn",
+   "ce": 0.5728037357330322,
+   "kl": null
+  },
+  {
+   "task": "gsm8k",
+   "step": 325,
+   "phase": "learn",
+   "ce": 0.6709034442901611,
+   "kl": null
+  },
+  {
+   "task": "gsm8k",
+   "step": 350,
+   "phase": "learn",
+   "ce": 0.5616011619567871,
+   "kl": null
+  },
+  {
+   "task": "gsm8k",
+   "step": 375,
+   "phase": "learn",
+   "ce": 0.629356861114502,
+   "kl": null
+  },
+  {
+   "task": "gsm8k",
+   "step": 400,
+   "phase": "learn",
+   "ce": 0.5138223171234131,
+   "kl": null
+  },
+  {
+   "task": "gsm8k",
+   "step": 425,
+   "phase": "learn",
+   "ce": 0.6319253444671631,
+   "kl": null
+  },
+  {
+   "task": "gsm8k",
+   "step": 450,
+   "phase": "learn",
+   "ce": 0.46055158972740173,
+   "kl": null
+  },
+  {
+   "task": "gsm8k",
+   "step": 475,
+   "phase": "repair",
+   "ce": 0.6411925554275513,
+   "kl": 0.02889997698366642
+  },
+  {
+   "task": "gsm8k",
+   "step": 500,
+   "phase": "repair",
+   "ce": 0.518582284450531,
+   "kl": 0.023763852193951607
+  },
+  {
+   "task": "gsm8k",
+   "step": 525,
+   "phase": "repair",
+   "ce": 0.5245938897132874,
+   "kl": 0.01232004165649414
+  },
+  {
+   "task": "gsm8k",
+   "step": 550,
+   "phase": "repair",
+   "ce": 0.4835360646247864,
+   "kl": 0.0098807318136096
+  },
+  {
+   "task": "gsm8k",
+   "step": 575,
+   "phase": "repair",
+   "ce": 0.596108615398407,
+   "kl": 0.009510057978332043
+  },
+  {
+   "task": "gsm8k",
+   "step": 600,
+   "phase": "repair",
+   "ce": 0.5157517790794373,
+   "kl": 0.00694814370945096
+  },
+  {
+   "task": "gsm8k",
+   "step": 624,
+   "phase": "repair",
+   "ce": 0.6971790790557861,
+   "kl": 0.007475022692233324
+  }
+ ],
+ "seconds": 1497.5
+}

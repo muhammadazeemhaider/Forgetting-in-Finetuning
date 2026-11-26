@@ -1,0 +1,510 @@
+{
+ "method": "repair",
+ "order": [
+  "yahoo",
+  "amazon",
+  "agnews",
+  "dbpedia"
+ ],
+ "seed": 0,
+ "acc_matrix": [
+  {
+   "after": "yahoo",
+   "acc": {
+    "yahoo": 0.7563999891281128
+   }
+  },
+  {
+   "after": "amazon",
+   "acc": {
+    "yahoo": 0.7558000087738037,
+    "amazon": 0.6407999992370605
+   }
+  },
+  {
+   "after": "agnews",
+   "acc": {
+    "yahoo": 0.7494000196456909,
+    "amazon": 0.6371999979019165,
+    "agnews": 0.9164999723434448
+   }
+  },
+  {
+   "after": "dbpedia",
+   "acc": {
+    "yahoo": 0.7508000135421753,
+    "amazon": 0.6420000195503235,
+    "agnews": 0.9110000133514404,
+    "dbpedia": 0.9921428561210632
+   }
+  }
+ ],
+ "task_stats": [
+  {
+   "steps": 625,
+   "protected_steps": 156,
+   "old_exposures": 2496,
+   "learn_steps": 469,
+   "repair_steps": 156,
+   "memory_tasks": [
+    "yahoo"
+   ],
+   "memory_examples": 128
+  },
+  {
+   "steps": 500,
+   "protected_steps": 125,
+   "old_exposures": 2000,
+   "learn_steps": 375,
+   "repair_steps": 125,
+   "memory_tasks": [
+    "amazon",
+    "yahoo"
+   ],
+   "memory_examples": 256
+  },
+  {
+   "steps": 1750,
+   "protected_steps": 438,
+   "old_exposures": 7008,
+   "learn_steps": 1312,
+   "repair_steps": 438,
+   "memory_tasks": [
+    "agnews",
+    "amazon",
+    "yahoo"
+   ],
+   "memory_examples": 384
+  }
+ ],
+ "log": [
+  {
+   "task": "amazon",
+   "step": 0,
+   "phase": "learn",
+   "ce": 2.5829222202301025,
+   "kl": null
+  },
+  {
+   "task": "amazon",
+   "step": 50,
+   "phase": "learn",
+   "ce": 1.1428006887435913,
+   "kl": null
+  },
+  {
+   "task": "amazon",
+   "step": 100,
+   "phase": "learn",
+   "ce": 1.0915172100067139,
+   "kl": null
+  },
+  {
+   "task": "amazon",
+   "step": 150,
+   "phase": "learn",
+   "ce": 1.2880229949951172,
+   "kl": null
+  },
+  {
+   "task": "amazon",
+   "step": 200,
+   "phase": "learn",
+   "ce": 0.6282528638839722,
+   "kl": null
+  },
+  {
+   "task": "amazon",
+   "step": 250,
+   "phase": "learn",
+   "ce": 0.847347617149353,
+   "kl": null
+  },
+  {
+   "task": "amazon",
+   "step": 300,
+   "phase": "learn",
+   "ce": 0.7902059555053711,
+   "kl": null
+  },
+  {
+   "task": "amazon",
+   "step": 350,
+   "phase": "learn",
+   "ce": 1.404918909072876,
+   "kl": null
+  },
+  {
+   "task": "amazon",
+   "step": 400,
+   "phase": "learn",
+   "ce": 0.7795008420944214,
+   "kl": null
+  },
+  {
+   "task": "amazon",
+   "step": 450,
+   "phase": "learn",
+   "ce": 0.5773163437843323,
+   "kl": null
+  },
+  {
+   "task": "amazon",
+   "step": 500,
+   "phase": "repair",
+   "ce": 0.7886353731155396,
+   "kl": 0.01772894710302353
+  },
+  {
+   "task": "amazon",
+   "step": 550,
+   "phase": "repair",
+   "ce": 0.8651859164237976,
+   "kl": 0.0024999368470162153
+  },
+  {
+   "task": "amazon",
+   "step": 600,
+   "phase": "repair",
+   "ce": 0.483565092086792,
+   "kl": 0.0029408230911940336
+  },
+  {
+   "task": "amazon",
+   "step": 624,
+   "phase": "repair",
+   "ce": 0.9561681747436523,
+   "kl": 0.0025515826418995857
+  },
+  {
+   "task": "agnews",
+   "step": 0,
+   "phase": "learn",
+   "ce": 0.9336029887199402,
+   "kl": null
+  },
+  {
+   "task": "agnews",
+   "step": 50,
+   "phase": "learn",
+   "ce": 0.834548830986023,
+   "kl": null
+  },
+  {
+   "task": "agnews",
+   "step": 100,
+   "phase": "learn",
+   "ce": 0.24462877213954926,
+   "kl": null
+  },
+  {
+   "task": "agnews",
+   "step": 150,
+   "phase": "learn",
+   "ce": 0.25804266333580017,
+   "kl": null
+  },
+  {
+   "task": "agnews",
+   "step": 200,
+   "phase": "learn",
+   "ce": 0.36127781867980957,
+   "kl": null
+  },
+  {
+   "task": "agnews",
+   "step": 250,
+   "phase": "learn",
+   "ce": 0.1793636679649353,
+   "kl": null
+  },
+  {
+   "task": "agnews",
+   "step": 300,
+   "phase": "learn",
+   "ce": 0.021345045417547226,
+   "kl": null
+  },
+  {
+   "task": "agnews",
+   "step": 350,
+   "phase": "learn",
+   "ce": 0.1779085397720337,
+   "kl": null
+  },
+  {
+   "task": "agnews",
+   "step": 400,
+   "phase": "repair",
+   "ce": 0.3303307592868805,
+   "kl": 0.023871373385190964
+  },
+  {
+   "task": "agnews",
+   "step": 450,
+   "phase": "repair",
+   "ce": 0.2514476776123047,
+   "kl": 0.01675514504313469
+  },
+  {
+   "task": "agnews",
+   "step": 499,
+   "phase": "repair",
+   "ce": 0.1206139624118805,
+   "kl": 0.008297545835375786
+  },
+  {
+   "task": "dbpedia",
+   "step": 0,
+   "phase": "learn",
+   "ce": 2.098497152328491,
+   "kl": null
+  },
+  {
+   "task": "dbpedia",
+   "step": 50,
+   "phase": "learn",
+   "ce": 0.12403130531311035,
+   "kl": null
+  },
+  {
+   "task": "dbpedia",
+   "step": 100,
+   "phase": "learn",
+   "ce": 0.5125485062599182,
+   "kl": null
+  },
+  {
+   "task": "dbpedia",
+   "step": 150,
+   "phase": "learn",
+   "ce": 0.01243338268250227,
+   "kl": null
+  },
+  {
+   "task": "dbpedia",
+   "step": 200,
+   "phase": "learn",
+   "ce": 0.006475638598203659,
+   "kl": null
+  },
+  {
+   "task": "dbpedia",
+   "step": 250,
+   "phase": "learn",
+   "ce": 0.14687436819076538,
+   "kl": null
+  },
+  {
+   "task": "dbpedia",
+   "step": 300,
+   "phase": "learn",
+   "ce": 0.016931112855672836,
+   "kl": null
+  },
+  {
+   "task": "dbpedia",
+   "step": 350,
+   "phase": "learn",
+   "ce": 0.003993227146565914,
+   "kl": null
+  },
+  {
+   "task": "dbpedia",
+   "step": 400,
+   "phase": "learn",
+   "ce": 0.00175179960206151,
+   "kl": null
+  },
+  {
+   "task": "dbpedia",
+   "step": 450,
+   "phase": "learn",
+   "ce": 0.0008209443185478449,
+   "kl": null
+  },
+  {
+   "task": "dbpedia",
+   "step": 500,
+   "phase": "learn",
+   "ce": 0.002610407304018736,
+   "kl": null
+  },
+  {
+   "task": "dbpedia",
+   "step": 550,
+   "phase": "learn",
+   "ce": 0.0007776413694955409,
+   "kl": null
+  },
+  {
+   "task": "dbpedia",
+   "step": 600,
+   "phase": "learn",
+   "ce": 0.22827516496181488,
+   "kl": null
+  },
+  {
+   "task": "dbpedia",
+   "step": 650,
+   "phase": "learn",
+   "ce": 0.0034886994399130344,
+   "kl": null
+  },
+  {
+   "task": "dbpedia",
+   "step": 700,
+   "phase": "learn",
+   "ce": 0.02039973996579647,
+   "kl": null
+  },
+  {
+   "task": "dbpedia",
+   "step": 750,
+   "phase": "learn",
+   "ce": 0.0003038847935386002,
+   "kl": null
+  },
+  {
+   "task": "dbpedia",
+   "step": 800,
+   "phase": "learn",
+   "ce": 0.014486182481050491,
+   "kl": null
+  },
+  {
+   "task": "dbpedia",
+   "step": 850,
+   "phase": "learn",
+   "ce": 0.0026824716478586197,
+   "kl": null
+  },
+  {
+   "task": "dbpedia",
+   "step": 900,
+   "phase": "learn",
+   "ce": 0.0021755993366241455,
+   "kl": null
+  },
+  {
+   "task": "dbpedia",
+   "step": 950,
+   "phase": "learn",
+   "ce": 0.0024903928861021996,
+   "kl": null
+  },
+  {
+   "task": "dbpedia",
+   "step": 1000,
+   "phase": "learn",
+   "ce": 0.01870655082166195,
+   "kl": null
+  },
+  {
+   "task": "dbpedia",
+   "step": 1050,
+   "phase": "learn",
+   "ce": 0.0004996552015654743,
+   "kl": null
+  },
+  {
+   "task": "dbpedia",
+   "step": 1100,
+   "phase": "learn",
+   "ce": 0.0026006721891462803,
+   "kl": null
+  },
+  {
+   "task": "dbpedia",
+   "step": 1150,
+   "phase": "learn",
+   "ce": 0.0013326631160452962,
+   "kl": null
+  },
+  {
+   "task": "dbpedia",
+   "step": 1200,
+   "phase": "learn",
+   "ce": 0.0008035448845475912,
+   "kl": null
+  },
+  {
+   "task": "dbpedia",
+   "step": 1250,
+   "phase": "learn",
+   "ce": 0.023963147774338722,
+   "kl": null
+  },
+  {
+   "task": "dbpedia",
+   "step": 1300,
+   "phase": "learn",
+   "ce": 0.0035555355716496706,
+   "kl": null
+  },
+  {
+   "task": "dbpedia",
+   "step": 1350,
+   "phase": "repair",
+   "ce": 0.002255020197480917,
+   "kl": 0.03237272426486015
+  },
+  {
+   "task": "dbpedia",
+   "step": 1400,
+   "phase": "repair",
+   "ce": 0.0019004854839295149,
+   "kl": 0.010561570525169373
+  },
+  {
+   "task": "dbpedia",
+   "step": 1450,
+   "phase": "repair",
+   "ce": 0.3318752348423004,
+   "kl": 0.023493517190217972
+  },
+  {
+   "task": "dbpedia",
+   "step": 1500,
+   "phase": "repair",
+   "ce": 0.032894548028707504,
+   "kl": 0.002566359471529722
+  },
+  {
+   "task": "dbpedia",
+   "step": 1550,
+   "phase": "repair",
+   "ce": 0.0032271319068968296,
+   "kl": 0.004678243305534124
+  },
+  {
+   "task": "dbpedia",
+   "step": 1600,
+   "phase": "repair",
+   "ce": 0.006641779560595751,
+   "kl": 0.0035291211679577827
+  },
+  {
+   "task": "dbpedia",
+   "step": 1650,
+   "phase": "repair",
+   "ce": 0.014619685709476471,
+   "kl": 0.004835235886275768
+  },
+  {
+   "task": "dbpedia",
+   "step": 1700,
+   "phase": "repair",
+   "ce": 0.050104666501283646,
+   "kl": 0.005989261902868748
+  },
+  {
+   "task": "dbpedia",
+   "step": 1749,
+   "phase": "repair",
+   "ce": 0.003967584110796452,
+   "kl": 0.002244858071208
+  }
+ ],
+ "seconds": 1488.9
+}

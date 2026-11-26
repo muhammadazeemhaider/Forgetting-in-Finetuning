@@ -1,0 +1,22 @@
+{
+ "method": "mtl",
+ "order": [
+  "wmt14",
+  "hellaswag",
+  "triviaqa",
+  "gsm8k"
+ ],
+ "seed": 1,
+ "acc_matrix": [
+  {
+   "after": "all",
+   "acc": {
+    "wmt14": 0.4577709855084054,
+    "hellaswag": 0.709,
+    "triviaqa": 0.41,
+    "gsm8k": 0.216
+   }
+  }
+ ],
+ "seconds": 587.8
+}

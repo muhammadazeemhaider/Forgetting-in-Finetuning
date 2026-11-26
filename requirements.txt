@@ -1,0 +1,17 @@
+# Analysis only (CPU): regenerate every table and figure from the shipped results
+numpy>=1.26
+pandas>=2.0
+scipy>=1.11
+matplotlib>=3.8
+tabulate>=0.9
+
+# Training / evaluation (GPU): continual_learning/ and finetuning_forgetting/reference/
+torch>=2.4
+transformers>=4.45
+peft>=0.13
+datasets>=2.20
+safetensors>=0.4
+huggingface_hub>=0.24
+sacrebleu>=2.4          # WMT14 BLEU in the generative continual-learning benchmark
+# bitsandbytes>=0.43    # optional: 8-bit AdamW
+# lm-eval[vllm]>=0.4.5  # evaluation of fine-tuned checkpoints (reference/evaluate.sh)

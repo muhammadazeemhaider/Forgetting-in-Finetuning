@@ -1,0 +1,104 @@
+{
+ "order": [
+  "wmt14",
+  "hellaswag",
+  "triviaqa",
+  "gsm8k"
+ ],
+ "seed": 1,
+ "config": {
+  "model": "meta-llama/Llama-3.2-1B",
+  "benchmark": "Generative CL benchmark: GSM8K (math), TriviaQA (closed-book QA), HellaSwag (sentence completion), WMT14 en->de (translation); 5k train / 1k test per task, 2 epochs; WMT14 train pairs sampled from the full training set",
+  "tasks": [
+   "gsm8k",
+   "triviaqa",
+   "hellaswag",
+   "wmt14"
+  ],
+  "orders": {
+   "order1": [
+    "gsm8k",
+    "triviaqa",
+    "hellaswag",
+    "wmt14"
+   ],
+   "order2": [
+    "wmt14",
+    "hellaswag",
+    "triviaqa",
+    "gsm8k"
+   ],
+   "order3": [
+    "triviaqa",
+    "wmt14",
+    "gsm8k",
+    "hellaswag"
+   ]
+  },
+  "seeds": [
+   0,
+   1,
+   2
+  ],
+  "data": {
+   "dir": "data_gen_5k",
+   "data_seed": 42,
+   "train_per_task": 5000,
+   "test_per_task": 1000,
+   "anchors_per_task": 128,
+   "max_length": 512,
+   "wmt14_train_split": "train",
+   "wmt14_candidates": 20000
+  },
+  "adapter": {
+   "target_modules": [
+    "q_proj",
+    "k_proj",
+    "v_proj",
+    "o_proj",
+    "gate_proj",
+    "up_proj",
+    "down_proj"
+   ],
+   "layers": "all",
+   "total_rank_per_task": 16,
+   "learn_rank": 8,
+   "repair_rank": 8,
+   "alpha_over_r": 1.0,
+   "dropout": 0.0
+  },
+  "training": {
+   "optimizer": "AdamW",
+   "lr": 0.0001,
+   "weight_decay": 0.0,
+   "betas": [
+    0.9,
+    0.999
+   ],
+   "grad_clip": 1.0,
+   "batch_size": 16,
+   "anchor_batch_size": 16,
+   "epochs_per_task": 2,
+   "protect_fraction": 0.25,
+   "lambda_old": 1.0
+  },
+  "eval": {
+   "batch_size": 32,
+   "max_new_tokens": {
+    "gsm8k": 256,
+    "triviaqa": 24,
+    "wmt14": 128
+   }
+  },
+  "methods": [
+   "seq",
+   "replay",
+   "delayed",
+   "repair",
+   "end_joint",
+   "mtl"
+  ]
+ },
+ "torch": "2.10.0+cu128",
+ "gpu": "NVIDIA L40S"
+}
