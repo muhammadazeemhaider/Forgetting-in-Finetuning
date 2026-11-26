@@ -644,7 +644,7 @@ All of this is one seed per configuration. Item-level CIs (§4.2) do not capture
 
 ## 9. How to answer these: proposed experiments (in priority order)
 
-Costs are rough, measured on this cluster: Llama-3.2-1B MetaMathQA 1 epoch ≈ 3–4 h on one L40S/H100 at batch 768; eval ≈ 15 min per checkpoint. Using **Llama-3.2-1B** keeps each arm to a few GPU-hours.
+Costs are rough estimates from the original runs: Llama-3.2-1B MetaMathQA 1 epoch ≈ 3–4 h on one L40S/H100 at batch 768; eval ≈ 15 min per checkpoint. Using **Llama-3.2-1B** keeps each arm to a few GPU-hours.
 
 **T1. Optimizer × format factorial (the decisive test).**
 - **Design.** Llama-3.2-1B, MetaMathQA, 1 epoch, batch 768, cosine with 10% warmup. Arms: {AdamW 32-bit, Lion} × {GSM8K-format text, chat format} × {full FT, LoRA r16}, plus one "Lion, LR lowered so ‖ΔW‖ matches AdamW" arm per method. 10 runs.

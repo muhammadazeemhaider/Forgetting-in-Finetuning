@@ -55,7 +55,7 @@ Section numbers inside a part (e.g. "Section 5") refer to that part.
 
 **Run notes.**
 - One results file (`runs_a64/order3_s2/end_joint.json`) was rebuilt after two jobs wrote it at the same time.
-- Two runs that timed out on the slow node node-05 were resubmitted; only the missing method was rerun.
+- Two runs that timed out on a slow node were resubmitted; only the missing method was rerun.
 - Earlier rounds used LoRA on attention only; those numbers are not comparable with the all-layer results here.
 
 ---
@@ -387,8 +387,8 @@ The 1k data shows the same pattern: no comparison is significant at any memory s
 
 ## Notes
 
-- **One results file was rebuilt.** `runs_a64/order3_s2/end_joint.json` was written at the same time by two jobs: my resubmission (66003026) and a duplicate submission (66003029) that I did not make. I kept 66003029's complete record, which matches the prediction and adapter files it wrote. The two runs differ by ≤ 0.5 pp per task on that one run, so the means are unaffected. 
-- **Two runs were resubmitted** after timing out on the slow node node-05: 1k-a64 order3_s2 and 1k-a32 order2_s2. The resubmissions finished only the missing method (end_joint); the methods already completed were kept.
+- **One results file was rebuilt.** `runs_a64/order3_s2/end_joint.json` was written at the same time by two concurrent jobs. The complete record was kept, which matches the prediction and adapter files written with it. The two runs differ by ≤ 0.5 pp per task on that one run, so the means are unaffected. 
+- **Two runs were resubmitted** after timing out on a slow node: 1k-a64 order3_s2 and 1k-a32 order2_s2. The resubmissions finished only the missing method (end_joint); the methods already completed were kept.
 - **Code changes:**
   - `run_order.py --anchors N --task0-from DIR --data-dir DIR`;
   - `prepare.py --out DIR`;
@@ -1039,7 +1039,7 @@ Every final model from Part D was scored on four benchmarks that no method train
 
 # Part F: data-free protection (no stored old-task data)
 
-**Status: done** (9 runs, job 66146038). General-ability scores of these models (job 66224833) are in Part E: all three stay at the base model's level, the same as replay.
+**Status: done** (9 runs). General-ability scores of these models are in Part E: all three stay at the base model's level, the same as replay.
 
 ## 1. The question
 
@@ -1287,7 +1287,7 @@ BWT shows the same pattern at both sizes: O-LoRA forgets significantly less than
 - **Stored memory:** 128 examples per task, never fine-tuned on, identical at every budget.
 - **Test sets:** unchanged from earlier parts.
 - **Training:** order 1 only (DBpedia → Amazon → Yahoo → AG News), 3 seeds. Llama-3.2-1B, LoRA rank 16 on all 7 linear layer types, 1 epoch, learning rate 1e-4.
-- **Runs:** jobs 66564028 (5k), 66564029 (10k) and 66563368 (100k LoRA), then 66603020–66603023 and 66636719 (100k O-LoRA, LoRA + TIES, replay, delayed distillation), all completed. The 100k runs took about 1.5 h each (about 3 h on the slower node-03).
+- **Runs:** all completed (5k, 10k and 100k per task; LoRA, O-LoRA, LoRA + TIES, replay, delayed distillation). The 100k runs took about 1.5 h each (about 3 h on a slower node).
 
 ## 1. Final accuracy (forgetting in brackets), mean over 3 seeds
 

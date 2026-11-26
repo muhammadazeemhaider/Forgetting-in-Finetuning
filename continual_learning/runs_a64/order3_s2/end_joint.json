@@ -394,5 +394,5 @@
    359
   ]
  },
- "note": "recovered: two concurrent end_joint runs (66003026, 66003029) wrote this file; kept 66003029's record, which matches the preds/adapters written at 21:54"
+ "note": "recovered: two concurrent end_joint runs wrote this file; kept the complete record, which matches the predictions/adapters written with it"
 }
